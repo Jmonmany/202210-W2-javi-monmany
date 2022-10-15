@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --color-headfoot: rgb(81,105,167);
+    --color-primary: rgb(253, 219, 83);
+    --color-secondary: rgb(208,157,114);
+    --color-hover: rgb(213,96,9);
+    --color-button: rgb(86,23,137);
+    --color-border: rgb(131,128,123);
+    --color-font: rgb(28,34,40);
+}
