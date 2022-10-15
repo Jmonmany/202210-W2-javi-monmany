@@ -1,14 +1,98 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    color: var(--color-font);
+    text-decoration: none;
+    border: solid 1px
 }
 
 :root {
     --color-headfoot: rgb(81,105,167);
-    --color-primary: rgb(253, 219, 83);
+    --color-primary: rgb(209,190,173);
     --color-secondary: rgb(208,157,114);
     --color-hover: rgb(213,96,9);
     --color-button: rgb(86,23,137);
     --color-border: rgb(131,128,123);
     --color-font: rgb(28,34,40);
+}
+body>header {
+    padding-inline: 1em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav :nth-child(2n) {
+    margin-inline: 1em;
+    font-weight: bold;
+}
+
+body>header, footer {
+    background-color: var(--color-headfoot);
+}
+
+section {
+    background-color: var(--color-primary);
+    height: 80vh;
+}
+
+section header {
+    height: 10%;
+    background-color: var(--color-secondary);
+}
+
+label *{
+    padding-left: 1em;
+    
+}
+
+input {
+    margin-right: 1em;
+}
+
+main {
+    font-size: medium;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--color-button);
+}
+section>div {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: larger;
+    padding-inline: 1em;
+    text-align: end;
+}
+main>div {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+main :first-child :nth-child(2n+1) {
+    text-decoration: line-through;
+}
+
+footer {
+    
+    text-align: center;
+    height: 10vh;
+}
+
+footer img {
+    
 }
