@@ -1,14 +1,148 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    color: var(--color-font);
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid px;
 }
 
 :root {
-    --color-headfoot: rgb(81,105,167);
-    --color-primary: rgb(253, 219, 83);
-    --color-secondary: rgb(208,157,114);
-    --color-hover: rgb(213,96,9);
-    --color-button: rgb(86,23,137);
-    --color-border: rgb(131,128,123);
-    --color-font: rgb(28,34,40);
+    --color-headfoot: rgb(81, 105, 167);
+    --color-primary: rgb(209, 190, 173);
+    --color-secondary: rgb(208, 157, 114);
+    --color-hover: rgb(213, 96, 9);
+    --color-button: rgb(86, 23, 137);
+    --color-border: rgb(131, 128, 123);
+    --color-font: rgb(28, 34, 40);
+}
+body > header {
+    padding-inline: 1em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: Arial black;
+}
+
+h4 {
+    text-decoration: none !important;
+    font-weight: lighter;
+}
+
+h5 {
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav :nth-child(2n) {
+    margin-inline: 1em;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 1.3em;
+}
+
+body > header,
+footer {
+    background-color: var(--color-headfoot);
+}
+
+section {
+    background-color: var(--color-primary);
+    height: 70vh;
+}
+
+section header {
+    padding-inline: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    background-color: var(--color-secondary);
+}
+
+label {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5em;
+}
+
+label :hover {
+    cursor: pointer;
+    color: var(--color-hover);
+}
+
+p {
+    text-decoration: line-through;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+input {
+    margin-right: 1em;
+}
+
+main {
+    height: 30%;
+    font-size: medium;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--color-button);
+}
+section > div {
+    margin-top: 1em;
+    font-size: 2em;
+    padding-right: 0.6em;
+    text-align: end;
+}
+main div {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+div h4::after {
+    margin-left: 1em;
+    content: '✖';
+}
+
+div h4 {
+    text-align: end;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+footer img {
+    height: 3em;
+}
+
+a img {
+    height: 2.4em;
 }
