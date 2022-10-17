@@ -3,17 +3,19 @@
     margin: 0;
     color: var(--color-font);
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 :root {
     --color-headfoot: rgb(81, 105, 167);
     --color-primary: rgb(209, 190, 173);
     --color-secondary: rgb(208, 157, 114);
-    --color-hover: rgb(213, 96, 9);
     --color-button: rgb(86, 23, 137);
     --color-border: rgb(131, 128, 123);
     --color-font: rgb(28, 34, 40);
+    --color-assetButton-background: rgb(78, 107, 164);
 }
+
 body > header {
     padding-inline: 1em;
     align-items: center;
@@ -29,8 +31,9 @@ h1 {
     font-family: Arial black;
 }
 
-h4 {
-    font-weight: lighter;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 h5 {
@@ -58,12 +61,12 @@ footer {
     background-color: var(--color-headfoot);
 }
 
-main {
+section {
     background-color: var(--color-primary);
     height: 70vh;
 }
 
-main header {
+section header {
     padding-inline: 1em;
     display: flex;
     align-items: center;
@@ -72,67 +75,34 @@ main header {
     background-color: var(--color-secondary);
 }
 
-h3 {
-    width: 100vw;
+div {
+    padding-inline: 1em;
+    padding-top: 4em;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 1.5em;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-h3 :hover {
-    cursor: pointer;
-    color: var(--color-hover);
-}
-
-i {
-    font-style: normal;
-    text-decoration: line-through;
-}
-
-h3 {
-    font-weight: lighter;
-    font-size: 1em;
-}
-
-b {
-    font-weight: lighter;
+label {
+    font-size: 1.4em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    width: 70vw;
+    border-bottom: solid 1px;
+    border-color: var(--color-button);
 }
 
 input {
-    margin-right: 1em;
+    border: none;
+    background-color: var(--color-assetButton-background);
+    height: 2.2em;
+    width: 5em;
+    margin-top: 2em;
 }
 
-section {
-    height: 30%;
-    font-size: medium;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: solid 1px var(--color-button);
-}
-main > div {
-    margin-top: 1em;
-    font-size: 2em;
-    padding-right: 0.6em;
-    text-align: end;
-}
-section div {
-    padding-top: 1em;
-    display: flex;
-    flex-direction: column;
+[value] {
     font-size: 1.5em;
-}
-
-div data::after {
-    margin-left: 1em;
-    content: '✖';
-}
-
-div h4 {
-    text-align: end;
+    color: aliceblue;
 }
 
 footer {
@@ -147,5 +117,5 @@ footer img {
 }
 
 a img {
-    height: 2.4em;
+    height: 3.4em;
 }
